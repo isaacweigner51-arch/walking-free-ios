@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Safety — Walking Free</title>
+  <meta name="description" content="Data Safety information for the Walking Free app." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f5efe6;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --accent: #1a8f7a;
+      --accent-light: #e8f5f2;
+      --border: rgba(0,0,0,0.08);
+      --font-serif: Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    li { margin-bottom: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    th {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .check {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .cross {
+      color: #dc2626;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 40px 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.2rem; }
+      table { font-size: 0.85rem; }
+      th, td { padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/icon-512.png" alt="Walking Free" class="logo" />
+      <h1>Data Safety</h1>
+      <p class="subtitle">Data collection and sharing practices for Walking Free</p>
+    </header>
+
+    <p>
+      This page provides the information you need to complete the <strong>Data Safety</strong> section in Google Play Console for the Walking Free app.
+    </p>
+
+    <h2>Overview</h2>
+    <table>
+      <tr>
+        <th>Question</th>
+        <th>Answer</th>
+      </tr>
+      <tr>
+        <td>Does your app collect or share any user data?</td>
+        <td class="check">Yes</td>
+      </tr>
+      <tr>
+        <td>Is all user data encrypted in transit?</td>
+        <td class="check">Yes</td>
+      </tr>
+      <tr>
+        <td>Do you provide a way for users to request data deletion?</td>
+        <td class="check">Yes</td>
+      </tr>
+    </table>
+
+    <h2>Data Types Collected</h2>
+    <table>
+      <tr>
+        <th>Data Type</th>
+        <th>Collected</th>
+        <th>Shared</th>
+        <th>Processing</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td><strong>Email address</strong></td>
+        <td class="check">Yes</td>
+        <td class="cross">No</td>
+        <td>App functionality</td>
+        <td>Account authentication and identification</td>
+      </tr>
+      <tr>
+        <td><strong>Personal info (sobriety date)</strong></td>
+        <td class="check">Yes</td>
+        <td class="cross">No</td>
+        <td>App functionality</td>
+        <td>Track recovery milestones and days sober</td>
+      </tr>
+      <tr>
+        <td><strong>User-generated content (journal entries)</strong></td>
+        <td class="check">Yes</td>
+        <td class="cross">No</td>
+        <td>App functionality</td>
+        <td>Personal recovery journal and step work</td>
+      </tr>
+      <tr>
+        <td><strong>App interactions</strong></td>
+        <td class="check">Yes</td>
+        <td class="cross">No</td>
+        <td>Analytics</td>
+        <td>Anonymous crash reports and app performance</td>
+      </tr>
+      <tr>
+        <td><strong>Device info</strong></td>
+        <td class="check">Yes</td>
+        <td class="cross">No</td>
+        <td>App functionality</td>
+        <td>Device compatibility and OS version</td>
+      </tr>
+      <tr>
+        <td><strong>Approximate location</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Precise location</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Photos or videos</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Contacts</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Phone number</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Financial info</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Health info</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Search history</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Web browsing history</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><strong>Audio data</strong></td>
+        <td class="cross">No</td>
+        <td class="cross">No</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+    </table>
+
+    <h2>Data Sharing</h2>
+    <p>
+      <strong>Walking Free does not share any user data with third parties.</strong>
+    </p>
+    <p>
+      The only third-party services we use are:
+    </p>
+    <ul>
+      <li><strong>Clerk</strong> — Authentication service. Your email is used only for login. Clerk does not use your data for advertising. <a href="https://clerk.com/privacy">Privacy Policy</a></li>
+      <li><strong>Google Play</strong> — App distribution platform. <a href="https://policies.google.com/privacy">Privacy Policy</a></li>
+    </ul>
+
+    <h2>Data Deletion</h2>
+    <p>
+      Users can delete their account and all associated data through the <strong>Settings</strong> page in the app. Data is permanently removed within 30 days.
+    </p>
+
+    <h2>Security Practices</h2>
+    <ul>
+      <li>All data transmitted between the app and our servers uses TLS encryption (HTTPS)</li>
+      <li>User passwords are never stored in plain text (handled by Clerk)</li>
+      <li>Local storage data stays on the device and is never transmitted when the user is not signed in</li>
+      <li>Database access is restricted to authenticated users only</li>
+    </ul>
+
+    <h2>Google Play Console — Step-by-Step</h2>
+
+    <h3>1. Does your app collect or share any of the required user data types?</h3>
+    <p><strong>Select:</strong> <span class="check">Yes</span></p>
+
+    <h3>2. Is all user data encrypted in transit?</h3>
+    <p><strong>Select:</strong> <span class="check">Yes</span></p>
+
+    <h3>3. Do you provide a way for users to request that their data is deleted?</h3>
+    <p><strong>Select:</strong> <span class="check">Yes</span></p>
+
+    <h3>4. Data Types</h3>
+    <p><strong>Check these boxes:</strong></p>
+    <ul>
+      <li><span class="check">Email address</span> — Collected, Not shared, App functionality</li>
+      <li><span class="check">Personal info</span> (sobriety date, name) — Collected, Not shared, App functionality</li>
+      <li><span class="check">User-generated content</span> (journal entries) — Collected, Not shared, App functionality</li>
+      <li><span class="check">App interactions</span> (crash data) — Collected, Not shared, Analytics</li>
+      <li><span class="check">Device or other IDs</span> — Collected, Not shared, App functionality</li>
+    </ul>
+
+    <h3>5. Data Sharing</h3>
+    <p><strong>Does your app share data with any third parties?</strong> Select <span class="cross">No</span></p>
+
+    <h3>6. Security Practices</h3>
+    <p><strong>Check these:</strong></p>
+    <ul>
+      <li><span class="check">Data is encrypted in transit</span></li>
+      <li><span class="check">You can request data deletion</span></li>
+    </ul>
+
+    <h3>7. Data Handling for Account Required Apps</h3>
+    <p>
+      <strong>Account creation is optional.</strong> Users can use the app without signing in. When signed in, data is synced across devices.
+    </p>
+
+    <footer>
+      <p>
+        Walking Free &mdash; Built with care for the recovery community.
+      </p>
+      <p>
+        &copy; 2026 Walking Free. All rights reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

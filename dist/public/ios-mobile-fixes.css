@@ -1,0 +1,91 @@
+:root {
+  --wf-mobile-nav-height: 3.5rem;
+  --wf-mobile-nav-gap: 0.35rem;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+.wf-app-shell {
+  min-height: 100dvh;
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (max-width: 767px) {
+  html {
+    /* A clearly larger iPhone presentation for the recovered Android UI. */
+    font-size: 19px;
+  }
+
+  /* Several labels used fixed pixel sizes and ignored the root-size increase. */
+  .text-\[8px\] {
+    font-size: 0.58rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .text-\[9px\] {
+    font-size: 0.6rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .text-\[10px\] {
+    font-size: 0.64rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .text-\[11px\] {
+    font-size: 0.68rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .wf-app-main {
+    padding-bottom: calc(
+      var(--wf-mobile-nav-height) + env(safe-area-inset-bottom, 0px) + 1.25rem
+    ) !important;
+  }
+
+  .wf-mobile-nav {
+    left: 0.5rem !important;
+    right: 0.5rem !important;
+    bottom: calc(
+      env(safe-area-inset-bottom, 0px) + var(--wf-mobile-nav-gap)
+    ) !important;
+    overflow: hidden;
+    border: 1px solid hsl(var(--border) / 0.72);
+    border-radius: 1.2rem;
+    box-shadow: 0 0.55rem 1.5rem hsl(var(--foreground) / 0.16);
+    transform: translateZ(0);
+  }
+
+  .wf-mobile-nav-items {
+    height: var(--wf-mobile-nav-height) !important;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .wf-mobile-nav-items span {
+    font-size: 0.6rem !important;
+  }
+
+  .wf-mobile-nav-items svg {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+}

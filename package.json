@@ -1,0 +1,24 @@
+{
+  "name": "walking-free-ios-larger-ui-v7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recovered Walking Free Capacitor project prepared for iOS",
+  "scripts": {
+    "patch:breathing": "node scripts/patch-guided-breathing.cjs",
+    "patch:ios-layout": "node scripts/patch-ios-layout.cjs",
+    "patch:privacy-link": "node scripts/patch-privacy-link.cjs",
+    "ios:add": "cap add ios",
+    "ios:sync": "cap sync ios",
+    "ios:open": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor-community/text-to-speech": "8.0.2",
+    "@capacitor/core": "8.5.2",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.5.2",
+    "@capgo/capacitor-updater": "8.51.16"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.2"
+  }
+}

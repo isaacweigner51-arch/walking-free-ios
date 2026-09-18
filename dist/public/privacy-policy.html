@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Privacy Policy — Walking Free</title>
+  <meta name="description" content="Privacy Policy for the Walking Free sobriety recovery app." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f5efe6;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --accent: #1a8f7a;
+      --accent-light: #e8f5f2;
+      --border: rgba(0,0,0,0.08);
+      --font-serif: Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .back-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: calc(10px + env(safe-area-inset-top, 0px)) 16px 10px;
+      background: rgba(245, 239, 230, 0.94);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .back-button {
+      appearance: none;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid rgba(26, 143, 122, 0.28);
+      border-radius: 999px;
+      background: white;
+      color: var(--accent);
+      font: 600 0.9rem var(--font-sans);
+      cursor: pointer;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    li { margin-bottom: 8px; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    .effective-date {
+      background: var(--accent-light);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+    .highlight-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (max-width: 600px) {
+      html { font-size: 18px; }
+      .container { padding: 40px 20px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-bar">
+    <button type="button" class="back-button" onclick="returnToWalkingFree()" aria-label="Return to Walking Free">
+      &larr; Back to Walking Free
+    </button>
+  </div>
+  <div class="container">
+    <header>
+      <img src="/icon-512.png" alt="Walking Free" class="logo" />
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Walking Free — Your Personal Sobriety Companion</p>
+    </header>
+
+    <div class="effective-date">
+      <strong>Effective Date:</strong> June 16, 2026
+    </div>
+
+    <p>
+      This Privacy Policy describes how Walking Free ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>1.1 Account Information</h3>
+    <p>
+      When you sign in, we use Clerk authentication to securely manage your account. We may collect:
+    </p>
+    <ul>
+      <li>Email address (for account identification)</li>
+      <li>Authentication tokens (managed by Clerk)</li>
+    </ul>
+
+    <h3>1.2 Personal Recovery Data</h3>
+    <p>
+      The app stores your personal recovery information to help you track your journey:
+    </p>
+    <ul>
+      <li>Sobriety start date</li>
+      <li>Journal entries</li>
+      <li>Gratitude logs</li>
+      <li>Step work progress</li>
+      <li>Milestone celebrations</li>
+      <li>Personal settings and preferences</li>
+    </ul>
+
+    <h3>1.3 Device Information</h3>
+    <p>
+      We collect minimal device information necessary for app functionality:
+    </p>
+    <ul>
+      <li>Device type and operating system version</li>
+      <li>App version and crash logs (for debugging only)</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li><strong>To provide the service:</strong> Your data is used to display your recovery timeline, milestones, journal, and progress.</li>
+      <li><strong>To sync across devices:</strong> When signed in, your data is stored securely in our database so you can access it on any device.</li>
+      <li><strong>To improve the app:</strong> Anonymous crash reports help us fix bugs and improve stability.</li>
+      <li><strong>We do not:</strong> Sell, rent, or share your personal data with third parties for advertising or marketing.</li>
+    </ul>
+
+    <h2>3. Data Storage & Security</h2>
+
+    <div class="highlight-box">
+      <p><strong>Your data is stored securely.</strong></p>
+      <p>
+        When you are signed in, your data is stored in a PostgreSQL database with industry-standard security practices. All API communications are encrypted over HTTPS.
+      </p>
+      <p>
+        When you are not signed in, your data is stored locally on your device only, using localStorage. This data never leaves your device.
+      </p>
+    </div>
+
+    <h3>3.1 Encryption</h3>
+    <p>
+      All data transmitted between the app and our servers is encrypted using TLS/HTTPS. We do not store passwords in plain text.
+    </p>
+
+    <h3>3.2 Data Retention</h3>
+    <p>
+      We retain your data for as long as your account is active. If you delete your account, we will remove your personal data within 30 days, except for anonymized data used for app improvement.
+    </p>
+
+    <h2>4. Your Rights & Choices</h2>
+
+    <h3>4.1 Access and Export</h3>
+    <p>
+      You can access all your data at any time within the app. Contact us if you need a full export of your data.
+    </p>
+
+    <h3>4.2 Deletion</h3>
+    <p>
+      You can delete your account and all associated data from the Settings page in the app. This will permanently remove your data from our servers.
+    </p>
+
+    <h3>4.3 Offline Mode</h3>
+    <p>
+      You can use the app without signing in. In this mode, all data stays on your device and is never transmitted to our servers.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>
+      We use the following third-party services:
+    </p>
+    <ul>
+      <li><strong>Clerk</strong> — For secure authentication. <a href="https://clerk.com/privacy" target="_blank" rel="noopener">Clerk Privacy Policy</a></li>
+      <li><strong>Google Play Services</strong> — For app distribution and updates. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Walking Free is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete it.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the effective date. We encourage you to review this policy periodically.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or our data practices, please contact us:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:privacy@walkingfree.app">privacy@walkingfree.app</a></li>
+    </ul>
+
+    <footer>
+      <p>
+        Walking Free &mdash; Built with care for the recovery community.
+      </p>
+      <p>
+        &copy; 2026 Walking Free. All rights reserved.
+      </p>
+    </footer>
+  </div>
+  <script>
+    function returnToWalkingFree() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = "/";
+      }
+    }
+  </script>
+</body>
+</html>

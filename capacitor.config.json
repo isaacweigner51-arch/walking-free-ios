@@ -1,0 +1,16 @@
+{
+  "appId": "com.walkingfree.app",
+  "appName": "Walking Free",
+  "webDir": "dist/public",
+  "ios": {
+    "contentInset": "never",
+    "preferredContentMode": "mobile",
+    "zoomEnabled": false,
+    "backgroundColor": "#f5efe6"
+  },
+  "plugins": {
+    "CapacitorUpdater": {
+      "autoUpdate": false
+    }
+  }
+}

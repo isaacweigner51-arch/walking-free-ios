@@ -1,0 +1,12 @@
+Walking Free iOS — Larger iPhone UI V7
+
+This build retains the V6 Privacy Policy fix, raised home-gesture-safe
+navigation, and soothing recorded breathing cues.
+
+V7 sizing changes:
+- Mobile interface base size increased from 17px to 19px
+- Cards, spacing, standard text, headings, and controls scale together
+- Hard-coded 8px, 9px, 10px, and 11px labels are enlarged separately
+- Navigation icons and labels remain readable without returning to the gesture area
+- The bundled Privacy Policy uses larger mobile text too
+- Cache version updated so the smaller V6 styling is not reused
