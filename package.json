@@ -13,10 +13,11 @@
   },
   "dependencies": {
     "@capacitor-community/text-to-speech": "8.0.2",
+    "@capacitor/android": "^8.5.2",
     "@capacitor/core": "8.5.2",
     "@capacitor/haptics": "8.0.2",
     "@capacitor/ios": "8.5.2",
-    "@capawesome/capacitor-apple-sign-in": "^0.1.4"
+    "@capgo/capacitor-updater": "^8.51.16"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.2"

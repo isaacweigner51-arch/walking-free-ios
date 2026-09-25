@@ -7,5 +7,10 @@
     "preferredContentMode": "mobile",
     "zoomEnabled": false,
     "backgroundColor": "#f5efe6"
+  },
+  "plugins": {
+    "CapacitorUpdater": {
+      "autoUpdate": false
+    }
   }
 }
